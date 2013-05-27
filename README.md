@@ -3,7 +3,7 @@ JavaScript Curry
 
 Many JavaScript curry examples are actually examples of partial application. I have attempted to implement true curry behavior in JavaScript.
 
-True curry behavior means only accepting a single argument at a time and only executing upon application of all arguments.
+True curry behavior means only accepting a single argument at a time and only executing upon application of all arguments. [citation](http://en.wikipedia.org/wiki/Currying)
 
 ```JavaScript
 $curried = curry(function (a, b, c) {
