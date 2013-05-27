@@ -1,3 +1,4 @@
+var curry = require('../lib/curry.js');
 describe("Test curry function", function() {
 	var func,
 		curried;
