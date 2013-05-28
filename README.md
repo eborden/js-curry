@@ -29,5 +29,4 @@ To run from the command line:
 Benchmark
 ----------
 
-JS Curry currently out performs native bind based currying.
 http://jsperf.com/js-curry-bench
