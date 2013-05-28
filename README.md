@@ -44,4 +44,4 @@ To run from the command line:
 Benchmark
 ----------
 
-http://jsperf.com/js-curry-bench
+http://jsperf.com/js-curry-bench/3
