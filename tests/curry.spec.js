@@ -45,4 +45,8 @@ describe("Test curry function", function() {
             expect(failure).toBe(true);
         }
     });
+    it("Reverse curry switches argument application direction", function() {
+        var rcurried = curry(func, true);
+        expect(rcurried('a')('b')('c')).toBe('cba');
+    });
 });
