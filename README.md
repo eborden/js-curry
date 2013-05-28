@@ -24,3 +24,10 @@ To run from the command line:
 
     npm install jasmine-node
     jasmine-node path/to/js-curry
+
+
+Benchmark
+----------
+
+JS Curry currently out performs native bind based currying.
+http://jsperf.com/js-curry-bench
