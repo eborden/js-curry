@@ -36,6 +36,13 @@ describe("Test curry function", function() {
         expect(addyz(2)(4)).toBe(7);
     });
     it("Curried functions only accept one argument at a time", function() {
-        expect(curried(1, 2999)(2)(3)).toBe(6);
+        var failure = false;
+        try {
+            curried(1, 2999);
+        } catch (e) {
+            failure = true;
+        } finally {
+            expect(failure).toBe(true);
+        }
     });
 });
