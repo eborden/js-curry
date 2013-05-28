@@ -16,7 +16,7 @@ curriedOne(2)(3); //6
 ```
 
 Reverse Currying is also possible
-``Javascript
+```Javascript
 //verbose
 curried = curry(function (a, b, c) {
 	return a + b + c;
@@ -28,7 +28,6 @@ curried = curry.r(function (a, b, c) {
 });
 
 curried('a')('b')('c'); //'cba'
-
 ```
 
 Tests
