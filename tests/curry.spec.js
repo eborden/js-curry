@@ -49,4 +49,8 @@ describe("Test curry function", function() {
         var rcurried = curry(func, true);
         expect(rcurried('a')('b')('c')).toBe('cba');
     });
+    it("Reverse curry convenience", function() {
+        var rcurried = curry.r(func);
+        expect(rcurried('a')('b')('c')).toBe('cba');
+    });
 });

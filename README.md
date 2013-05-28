@@ -6,13 +6,29 @@ Many JavaScript curry examples are actually examples of partial application. Thi
 True curry behavior means only accepting a single argument at a time and only executing upon application of all arguments. [[citation](http://en.wikipedia.org/wiki/Currying)]
 
 ```JavaScript
-$curried = curry(function (a, b, c) {
+curried = curry(function (a, b, c) {
 	return a + b + c;
 });
-$curried(1)(2)(3); //6
+curried(1)(2)(3); //6
 
-$curriedOne = $curried(1);
-$curriedOne(2)(3); //6
+curriedOne = $curried(1);
+curriedOne(2)(3); //6
+```
+
+Reverse Currying is also possible
+``Javascript
+//verbose
+curried = curry(function (a, b, c) {
+	return a + b + c;
+}, true);
+
+//single argument convenience
+curried = curry.r(function (a, b, c) {
+	return a + b + c;
+});
+
+curried('a')('b')('c'); //'cba'
+
 ```
 
 Tests
